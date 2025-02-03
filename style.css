@@ -299,6 +299,29 @@ nav{
     border-radius: 1em;
 }
 
+.test{
+    box-sizing: border-box;
+    border-radius:50%;
+    width: 300px;
+    height: auto;
+    z-index: -2;
+    position: absolute;
+    opacity: 0.4;
+    transition: all 5s ease-in-out;
+    animation: test 30s infinite linear; 
+}
+#test1{
+    align-self: center;
+    justify-self: center;
+}
+
+@keyframes test {
+    0%{ /*left: 35px; top: 100px; */    transform: rotate(0deg);}
+    /*25%{ /*left: 200px; top: 100px;  */   /* transform: rotate(360deg) ; }
+    50%{ /*left: 200px; top: 370px; */ /*transform: rotate(-0deg)}
+    75%{ /*left: 35px; top: 370px; *//* transform: rotate(-360deg)}*/
+    100%{ /*left: 35px; top: 100px; */   transform: rotate(360deg ) ;} 
+}
 
 
 
@@ -321,4 +344,9 @@ nav{
     .card{
         padding: 10px 30px;
     }
+     #test1{
+        width: 500px;
+        height: auto;
+    }	
+	
 }
