@@ -342,6 +342,9 @@ nav{
     .card{
         padding: 10px 30px;
     }
-    
+    #test1{
+        width: 500px;
+        height: auto;
+    }
 	
 }
