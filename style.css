@@ -184,10 +184,11 @@ a{
 	transition: opacity 1s;
 }
 
-#splash img {
-	width: 300px;
-    height: auto;
+#splash h1 {
+    color:var(--second-color) ;
+    font-size: 3rem;
 }
+
 
 #splash.fade {
 	opacity: 0;
@@ -346,5 +347,8 @@ nav{
         width: 500px;
         height: auto;
     }
+    #splash h1{
+        font-size: 5rem;
+    }	  	  
 	
 }
