@@ -352,3 +352,12 @@ nav{
     }	  	  
 	
 }
+
+
+@media (max-width: 768px){
+    #d{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+}
