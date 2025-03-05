@@ -58,7 +58,7 @@ header{
         transform-origin: 50% 50%;
         padding: 0 5px;
 }
-.title {
+.title{
     border-top: 2px solid var(--second-color);
     border-bottom: 2px solid var(--second-color);
     border-right: 2px solid var(--second-color);
@@ -194,7 +194,7 @@ a{
 	opacity: 0;
     pointer-events: none;
 }
-
+ 
 /*morning*/
 
 .navbarp{
@@ -286,7 +286,7 @@ nav{
 }
 
 /*morning*/
-.bor{
+.bor,.ppo,#h22{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -298,6 +298,7 @@ nav{
     width: 300px;
     height: auto;
     border-radius: 1em;
+    margin-bottom:10px ;
 }
 
 .test{
@@ -316,13 +317,32 @@ nav{
     justify-self: center;
 }
 
+#h22 h2{
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    border: solid 2px;
+ 
+    width: 300px;
+    background-color: var(--main-color);
+    color: var(--second-color);
+}
+ 
+#h22 h2{
+        border-radius: 0.3em;
+        box-shadow: 1px 0 0 5px rgba(202, 197, 197, 0.123);
+}
+
+
+
 @keyframes test {
     0%{   transform: rotate(0deg);}
    
     100%{transform: rotate(360deg ) ;} 
 }
-
-
 
 
 
@@ -333,7 +353,16 @@ nav{
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
     }
-     
+    .po{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .bor{
+        display: grid;
+        grid-template-columns: 2fr fr;
+        grid-gap: 20px;
+    }
     .off-screen-menu{
         max-width:450px;
     }
@@ -350,9 +379,10 @@ nav{
     #splash h1{
         font-size: 5rem;
     }	  	  
-	
+	#h22 h2{
+        width: 600px;
+    }
 }
-
 
 @media (max-width: 768px){
     #d{
