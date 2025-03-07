@@ -15,6 +15,10 @@
   font-style: normal;
 }
 
+html {
+    scroll-behavior:auto;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -197,14 +201,18 @@ a{
  
 /*morning*/
 
+.wwww{
+grid-template-columns: repeat(2, minmax(0px, 50%));
+display:grid;
+align-items: center;
+justify-content: center; 
+box-shadow: var(--main-shadow);
+}
+
 .navbarp{
-    align-items: center;
-    justify-content: center;
-    display:grid;
-    grid-template-columns: repeat(2, minmax(0px, 50%));
     background-color: var(--main-color);
     color: var(--second-color);
-    box-shadow: var(--main-shadow);
+   
 }
 #x{
     font-size: rem;
@@ -337,6 +345,35 @@ nav{
 }
 
 
+.btoo{
+ 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    background-color: var(--main-color);
+
+    box-shadow: var(--main-shadow);
+}
+
+.bto a{
+    color: var(--second-color);
+    text-decoration: none;
+    align-self: center;
+    justify-content: space-between;
+    display: inline;
+    padding: 10px 10px;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+
+
+
+
+
+
+
 
 @keyframes test {
     0%{   transform: rotate(0deg);}
@@ -345,6 +382,8 @@ nav{
 }
 
 
+  
+      
 
 
 @media (min-width: 768px) {
@@ -381,6 +420,10 @@ nav{
     }	  	  
 	#h22 h2{
         width: 600px;
+    }
+    .bto a{
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 
